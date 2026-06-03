@@ -3,7 +3,12 @@ from typing import Optional
 from pydantic import BaseModel
 #Similar to (from math import sqrt)
 
-app = FastAPI() 
+app = FastAPI(
+    title="Student API",
+    description="Student management system",
+    version="1.0.0",
+    summary="Demo API"
+)
 #Similar to car = Car() <- This is declaration of a class and storing in a variable
 
 #GET - GET AN INFORMATION
